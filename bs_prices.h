@@ -12,6 +12,7 @@ European call options template; Credit to Quantstart
 
 // Standard normal probability density function
 double norm_pdf(const double x) {
+  // 1 / (2*pi)^0.5 * e^(-.5*x*x)
   return (1.0/(pow(2*M_PI,0.5)))*exp(-0.5*x*x);
 }
 
